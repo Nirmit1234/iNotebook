@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import Navbar from './componenets/Navbar';
 import Home from './componenets/Home';
-import About from './componenets/About';
 import NoteState from './contexts/notes/NoteState';
 import Alert from './componenets/Alert';
 import SignUp from './componenets/SignUp';
@@ -34,9 +33,6 @@ function App() {
             <Switch>
                   <Route exact path="/">
                     <Home showAlert={showAlert}/>
-                  </Route>
-                  <Route exact path="/about">
-                    <About/>
                   </Route>
                   <Route exact path="/login">
                     <Login showAlert={showAlert}/>
